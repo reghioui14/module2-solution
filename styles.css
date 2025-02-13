@@ -1,1 +1,62 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Title */
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+    width: 30%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Section Titles */
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Tablet View (768px - 991px) */
+@media (max-width: 991px) {
+    .section {
+        width: 45%;
+    }
+    .section:last-child {
+        width: 100%;
+    }
+}
+
+/* Mobile View (≤767px) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
 
